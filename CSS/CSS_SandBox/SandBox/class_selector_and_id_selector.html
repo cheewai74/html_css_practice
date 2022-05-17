@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+        .error{
+            background-color:lightcoral
+        }
+        .warning{
+            background-color: yellow
+        }
+        .info{
+            background-color: lightblue
+        }
+        /* Class selector will have priority over
+           your element selector. */
+        #critical{
+            font-size: 30px;
+            color: white;
+            background-color:red
+        }
+        /* ID selector has the highest priority */
+    </style>
+</head>
+<body>
+    <!-- <p>This is a message</p>
+    <p>This is a message</p>
+    <p>This is a message</p>
+    <p>This is a message</p>
+    <p>This is a message</p> -->
+
+    <!-- class selector demo -->
+    <p class="error">This is an error message</p>
+    <p class="warning">This is a warning message</p>
+    <p class="info">This is a info message</p>
+    <p class="error" id="critical">This is a critical error message</p>
+</body>
+</html>
